@@ -1,0 +1,112 @@
+<?php
+
+/*
+ * @author Balaji
+ * Language File: English
+ */
+
+$lang = array();
+
+$lang['1'] = "Contact Us";
+$lang['2'] = "$site_name Account Confirmation";
+$lang['3'] = "Activation code successfully sent to your mail id"; 
+$lang['4'] = "Email ID already verified!"; 
+$lang['5'] = "Email ID not found!";
+$lang['6'] = "Unable to post on database! Contact Support!";
+$lang['7'] = "Password changed successfully and Sent to your mail";
+$lang['8'] = "$site_name Password Reset";
+$lang['9'] = "Email ID not found!";  
+$lang['10'] = "You are already logged in";
+$lang['11'] = "Login Successful..";
+$lang['12'] = "Oh, no your account was banned! Contact Support..";
+$lang['13'] = "Oh, no account not verified";
+$lang['14'] = "Oh, no password is wrong";
+$lang['15'] = "Username not found";
+$lang['16'] = "All fields must be filled out!";
+$lang['17'] = "Username already taken";
+$lang['18'] = "Email ID already registered";
+$lang['19'] = "Your account was successfully registered";
+$lang['20'] = "$site_name Account Confirmation";
+$lang['21'] = "Username not valid! Username can't contain special characters..";
+$lang['22'] = "All fields must be filled out!";
+$lang['23'] = "Username not vaild";
+$lang['24'] = "Username changed successfully";
+$lang['25'] = "Page not found";
+$lang['26'] = "Top Sites";
+$lang['27'] = "Captcha code is wrong!";
+$lang['28'] = "We value all the feedbacks received from our customers.";
+$lang['29'] = "If you have any queries, comments, suggestions or have anything to talk about.";
+$lang['30'] = "Message Sent Successfully. ";
+$lang['31'] = "Error - Try Again (Message Failed) ";
+$lang['32'] = "Name:";
+$lang['33'] = "Email ID:";
+$lang['34'] = "Subject:";
+$lang['35'] = "Enter Image verification:";
+$lang['36'] = "Home";
+$lang['37'] = "Logout";
+$lang['38'] = "Sign In";
+$lang['39'] = "Sign Up";
+$lang['40'] = "Redirecting to you index page...";
+$lang['41'] = "An activation email has been sent to your email address, Please also check your Junk/Spam Folders";
+$lang['42'] = "Login to your Account";
+$lang['43'] = "Register an account";
+$lang['44'] = "Forgot Password";
+$lang['45'] = "Resend activation email";
+$lang['46'] = "Options:";
+$lang['47'] = "Enter your email address";
+$lang['48'] = "Resend Activation Code";
+$lang['49'] = "Forget Password";
+$lang['50'] = "Quickly Calculate the Estimated Worth of Your Website and Build SEO reports as PDF";
+$lang['51'] = "Please Wait... Analyzing your site...";
+$lang['52'] = "Enter your domain....";
+$lang['53'] = "Popular Sites";
+$lang['54'] = "Estimated Worth";
+$lang['55'] = "Recent Sites";
+$lang['56'] = "Example Searches";
+$lang['57'] = "Oauth Login System";
+$lang['58'] = "Login Success.. Redirecting to you index page...";
+$lang['59'] = "Almost signup process over. One step need to go..";
+$lang['60'] = "Auto generated name";
+$lang['61'] = "Set your Username";
+$lang['62'] = "No thanks keep auto generated name";
+$lang['63'] = "Submit";
+$lang['64'] = " Get complete information about your website, our unique algorithm will calculate
+ and estimate the daily visitors, pagerank, traffic details and social stats etc.. ";
+$lang['65'] = "Last updated on";
+$lang['66'] = "Update Data";
+$lang['67'] = "Visit Website";
+$lang['68'] = "Estimated Data Report";
+$lang['69'] = "Estimated Pageviews";
+$lang['70'] = "Estimated Unique Visitors";
+$lang['71'] = "Estimated Ad Income";
+$lang['72'] = "Daily";
+$lang['73'] = "Monthly";
+$lang['74'] = "Yearly";
+$lang['75'] = "Get widget Code";
+$lang['76'] = "Generate report as <br /> PDF file";
+$lang['77'] = "Generate report as PDF file <br /> (Registered user only)";
+$lang['78'] = "Generate PDF";
+$lang['79'] = "General Information";
+$lang['80'] = "Meta Tags";
+$lang['81'] = "Info";
+$lang['82'] = "Title";
+$lang['83'] = "Description";
+$lang['84'] = "Keywords";
+$lang['85'] = "Domain Age";
+$lang['86'] = "Server Response";
+$lang['87'] = "Website Traffic Information";
+$lang['88'] = "Stats";
+$lang['89'] = "SEO Stats";
+$lang['90'] = "Services";
+$lang['91'] = "Result";
+$lang['92'] = "Social Stats";
+$lang['93'] = "Host Information";
+$lang['94'] = "Server IP Blacklist/NOT";
+$lang['95'] = "Blacklist means involved in spamming or other unwanted online behavior, on your server IP address.";
+$lang['96'] = "Malware detection";
+$lang['97'] = "Stats";
+$lang['98'] = "WHOIS Information";
+$lang['99'] = "Widget Code";
+$lang['100'] = "Top Worth Sites";
+$lang['101'] = "Email ID not valid";
+?>
