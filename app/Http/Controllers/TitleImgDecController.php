@@ -3,16 +3,15 @@
 namespace App\Http\Controllers;
 
 use Spatie\Dns\Dns;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Spatie\Image\Manipulations;
 use Spatie\Browsershot\Browsershot;
 use Illuminate\Support\Facades\Storage;
-use Spatie\SslCertificate\SslCertificate;
-use Stevebauman\Location\Facades\Location;
 
-class ApiForSitesLikeTFController extends Controller
+class TitleImgDecController extends Controller
 {
-    public function api(Request $request)
+    public function Api(Request $request)
     {
 
         $bucket  = $request->bucket;
@@ -27,7 +26,8 @@ class ApiForSitesLikeTFController extends Controller
             $screenshot = false;
         }
 
-        if ($screenshot) {
+        if (true) {
+            $url            = Str::slug($url, '-');
             $thumbnail_name = $url . '.png';
             $thumbnailPath  = 'scrape/thumbnail/' . $thumbnail_name;
             Storage::disk('wasabi')->put($thumbnailPath, $screenshot);
@@ -35,13 +35,10 @@ class ApiForSitesLikeTFController extends Controller
             $thumbnail_name = 'noimage.png';
         }
 
-        $alexaRank      = alexa_rank($httpUrl);
-        $record['dns']  = $dns->getRecords(); // returns all available dns records
-        $seo            = seoAnalyzer($httpUrl);
-        $builtWith      = builtWith($httpUrl);
-        $sslCertificate = sslCertificate($httpUrl);
-        $location       = json_decode(json_encode(Location::get(gethostbyname($url))), true);
-        $final          = array_merge($alexaRank, $record, $seo, $builtWith, $sslCertificate, $location);
+        $thumbnail['imageName'] = $thumbnail_name;
+        $seo                    = seoAnalyzer($httpUrl);
+        $final                  = array_merge($seo, $thumbnail);
+
         return response()->json($final);
     }
 }

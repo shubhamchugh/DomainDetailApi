@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TitleImgDecController;
 use App\Http\Controllers\ScreenShotApiController;
 use App\Http\Controllers\ApiForSitesLikeTFController;
 
@@ -24,3 +25,5 @@ Route::prefix('v1')->name('api.v1')->group(function () {
 });
 
 Route::get('metadata', [ApiForSitesLikeTFController::class, 'api']);
+
+Route::get('TitleImgDec', [TitleImgDecController::class, 'Api']);
