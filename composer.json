@@ -15,7 +15,7 @@
         "madeitbelgium/seo-analyzer": "^0.6",
         "madeitbelgium/wappalyzer": "~1.0",
         "probablyrational/wasabi-storage": "^1.3",
-        "spatie/browsershot": "^3.46",
+        "spatie/browsershot": "3.46",
         "spatie/dns": "^1.6",
         "spatie/ssl-certificate": "^1.22",
         "stevebauman/location": "^6.1"
