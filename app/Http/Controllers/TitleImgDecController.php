@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Spatie\Dns\Dns;
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use Spatie\Image\Manipulations;
-use Spatie\Browsershot\Browsershot;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Spatie\Browsershot\Browsershot;
+use Spatie\Dns\Dns;
+use Spatie\Image\Manipulations;
 
 class TitleImgDecController extends Controller
 {
@@ -26,10 +26,10 @@ class TitleImgDecController extends Controller
             $screenshot = false;
         }
 
-        if (true) {
+        if (!$screenshot) {
             $url            = Str::slug($url, '-');
             $thumbnail_name = $url . '.png';
-            $thumbnailPath  = 'scrape/thumbnail/' . $thumbnail_name;
+            $thumbnailPath  = '/' . $thumbnail_name;
             Storage::disk('wasabi')->put($thumbnailPath, $screenshot);
         } else {
             $thumbnail_name = 'noimage.png';
