@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
-use Spatie\Browsershot\Browsershot;
 use Spatie\Dns\Dns;
+use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 use Spatie\Image\Manipulations;
+use Spatie\Browsershot\Browsershot;
+use Illuminate\Support\Facades\Storage;
 
 class TitleImgDecController extends Controller
 {
@@ -26,7 +26,7 @@ class TitleImgDecController extends Controller
             $screenshot = false;
         }
 
-        if (!$screenshot) {
+        if (!empty($screenshot)) {
             $url            = Str::slug($url, '-');
             $thumbnail_name = $url . '.png';
             $thumbnailPath  = '/' . $thumbnail_name;
